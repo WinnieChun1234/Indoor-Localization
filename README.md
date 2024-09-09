@@ -7,15 +7,15 @@ The second phrase of the project tries to locate the router in a classroom. Amon
 ### For setup the ESP32 and the MQTT
 please consult the folder ESP32_Setup and the mqttControlAndDataProcess.py.
 
-### For testing localization algorithms using the dataset, please consult:
-    1. Approach 1: localization_max.py 
-    2. Approach 2: localization_weighted.py
-    3. Approach 3 & 4: localization_trilateration.py
-    4. Approach 5: ml folder
+### For testing localization algorithms using the dataset:
+Approach 1: localization_max.py 
+Approach 2: localization_weighted.py
+Approach 3 & 4: localization_trilateration.py
+Approach 5: ml folder
 
-### For testing war-driving, please consult:
-    1. wardriving_data_processing.py
-    2. wardriving_trilateration.py
+### For testing war-driving:
+ardriving_data_processing.py
+wardriving_trilateration.py
 
-### For viewing results of the wardriving in chi wah commons, please consult:
-    1. war_driving_result.jpeg
+### For viewing results of the wardriving in chi wah commons:
+war_driving_result.jpeg
