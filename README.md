@@ -1,27 +1,28 @@
-# Indoor-Localization
+# End-to-End Indoor-Localization system based on Wi-Fi RSSI
 The first phrase of the project tries to carry out war driving in Chi Wah Learning Commons to find out the position of routers using variuos methods on the provideed map.
-The second phrase of the project tries to locate the router in a classroom. Among the four methods, trilateration and machine learning approach give the best accuracy. 
+The second phrase of the project tries to locate the router in a classroom. 
 
--------------------------------------------------------------------------------------------------------------
+## Workflow
+1. RSSI Data Collection: Get RSSI data from an IoT device
+2. Data Transportation: Send the RSSI data to an edge/cloud server for processing
+3. Localization Algorithm: Estimate the clientʼs location based on the collected RSSI data
+4. System Evaluation: Evaluate the system performance both on benchmark datasets and in real-world scenarios.
 
-## For setup the ESP32 and the MQTT
-please look at the folder ESP32_Setup and the mqttControlAndDataProcess.py.
+## Implementations
+#### For ESP32 setup, please refer to the folder ESP32_Setup 
 
-## For testing localization algorithms using the dataset:
-Approach 1: localization_max.py 
+#### For MQTT setup, please refer to mqttControlAndDataProcess.py
+  
+#### For localization algorithms on four differnt approaches: 
+  1. localization_max.py 
+  2. localization_weighted.py
+  3. localization_trilateration.py
+  4. ml folder
 
-Approach 2: localization_weighted.py
-
-Approach 3 & 4: localization_trilateration.py
-
-Approach 5: ml folder
-
-## For testing war-driving:
-
-ardriving_data_processing.py
-wardriving_trilateration.py
+#### For war-driving on two approaches:
+  1. ardriving_data_processing.py
+  2. wardriving_trilateration.py
 
 
-## For viewing results of the wardriving in chi wah commons:
-
-war_driving_result.jpeg
+## Result and Findings
+Overall, the wardriving and indoor-localization system are successfully implemented and the performance are satisfactory. For more, the detailed report can be found in the Final_Report.pdf
